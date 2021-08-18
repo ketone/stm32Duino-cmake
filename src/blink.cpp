@@ -22,28 +22,13 @@
   http://www.arduino.cc/en/Tutorial/Blink
 */
 
-// extern "C" void _init(void) {}
-// extern "C" void _sbrk(void) {}
-// extern "C" void _exit(int) {}
-// extern "C" void _kill(void) {}
-// extern "C" void _getpid(void) {}
-// extern "C" void _close(void) {}
-// extern "C" void _lseek(void) {}
-// extern "C" void _read(void) {}
-// extern "C" void _fstat(void) {}
-// extern "C" void _isatty(void) {}
-
 
 // the setup function runs once when you press reset or power the board
 
 
 
 #include <Arduino.h>
-#include "SrcWrapper.h"
 
-
-void setup() ;
-void loop() ;
 
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
@@ -53,7 +38,7 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
   digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(50);                       // wait for a second
+  delay(1000);                       // wait for a second
   digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(50);                       // wait for a second
+  delay(1000);                       // wait for a second
 }
