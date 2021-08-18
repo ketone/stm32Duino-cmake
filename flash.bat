@@ -1,0 +1,1 @@
+st-flash --reset write build/Main.bin 0x8000000
