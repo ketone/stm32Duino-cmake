@@ -8,7 +8,7 @@ Target platform for the project is stm32f103cBt6 "Blue Pill" arduino-nano-like d
 # Project Structure
 
 * cmake - CMake toolchain files and project wide compiler settings
-* Libs - STM32duino, CMSIS libraries
+* Libs - STM32duino from https://github.com/stm32duino/Arduino_Core_STM32, CMSIS from https://developer.arm.com/tools-and-software/embedded/cmsis libraries
 * Src - Arduino sketches here
 * Build - Cmake configuration and output binary files
 
@@ -25,12 +25,14 @@ CMake is used as a build system. Here is an example how to generate Makefile fro
 
 ```
 configure
+```
+```
 build
 ```
 
 
 # Links and misc stuff
 
-* Works great with VSCode, just need to install CMake extension
+* Works great with VSCode, just need to install C/C++ and CMake extensions
 
 * Cmake ported from https://github.com/ObKo/stm32-cmake
